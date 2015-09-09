@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		282FED811B956A400066DB27 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 282FED781B956A400066DB27 /* DDAbstractDatabaseLogger.m */; };
+		282FED821B956A400066DB27 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 282FED7A1B956A400066DB27 /* DDASLLogger.m */; };
+		282FED831B956A400066DB27 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 282FED7C1B956A400066DB27 /* DDFileLogger.m */; };
+		282FED841B956A400066DB27 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 282FED7E1B956A400066DB27 /* DDLog.m */; };
+		282FED851B956A400066DB27 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 282FED801B956A400066DB27 /* DDTTYLogger.m */; };
+		282FED8B1B956A4B0066DB27 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 282FED881B956A4B0066DB27 /* ContextFilterLogFormatter.m */; };
+		282FED8C1B956A4B0066DB27 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 282FED8A1B956A4B0066DB27 /* DispatchQueueLogFormatter.m */; };
+		282FED9D1B95710B0066DB27 /* PHLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 282FED901B95710B0066DB27 /* PHLoadingViewController.m */; };
+		282FED9E1B95710B0066DB27 /* PHLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 282FED911B95710B0066DB27 /* PHLoadingViewController.xib */; };
+		282FED9F1B95710B0066DB27 /* PHBridgePushLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 282FED931B95710B0066DB27 /* PHBridgePushLinkViewController.m */; };
+		282FEDA01B95710B0066DB27 /* PHBridgePushLinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 282FED941B95710B0066DB27 /* PHBridgePushLinkViewController.xib */; };
+		282FEDA11B95710B0066DB27 /* PHBridgeSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 282FED961B95710B0066DB27 /* PHBridgeSelectionViewController.m */; };
+		282FEDA21B95710B0066DB27 /* PHBridgeSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 282FED971B95710B0066DB27 /* PHBridgeSelectionViewController.xib */; };
+		2838A9D41B95D314008CF364 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838A9D31B95D314008CF364 /* HomeViewController.swift */; };
+		2838A9D91B9834B8008CF364 /* ViewSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838A9D81B9834B8008CF364 /* ViewSettings.swift */; };
+		28F1FB281B9460D40073117B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F1FB271B9460D40073117B /* AppDelegate.swift */; };
+		28F1FB2D1B9460D40073117B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28F1FB2B1B9460D40073117B /* Main.storyboard */; };
+		28F1FB2F1B9460D40073117B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28F1FB2E1B9460D40073117B /* Images.xcassets */; };
+		28F1FB321B9460D40073117B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F1FB301B9460D40073117B /* LaunchScreen.xib */; };
+		28F1FB3E1B9460D40073117B /* SleeponomicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F1FB3D1B9460D40073117B /* SleeponomicsTests.swift */; };
+		28F1FB481B946EDC0073117B /* HueSDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F1FB471B946EDC0073117B /* HueSDK_iOS.framework */; };
+		54A13F881B9775CD0013367B /* SleepTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A13F871B9775CD0013367B /* SleepTime.swift */; };
+		54A3729D1B98CC5100481CB0 /* ColorConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A3729C1B98CC5100481CB0 /* ColorConfiguration.swift */; };
+		5D8B35D61B95CF35008CCE9E /* bridge-auth.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B35D31B95CF35008CCE9E /* bridge-auth.png */; };
+		5D8B35D71B95CF35008CCE9E /* bridge-auth@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B35D41B95CF35008CCE9E /* bridge-auth@2x.png */; };
+		5D8B35D81B95CF35008CCE9E /* bridge-auth@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8B35D51B95CF35008CCE9E /* bridge-auth@3x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28F1FB381B9460D40073117B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28F1FB1A1B9460D40073117B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28F1FB211B9460D40073117B;
+			remoteInfo = Sleeponomics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		282FED771B956A400066DB27 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		282FED781B956A400066DB27 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		282FED791B956A400066DB27 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		282FED7A1B956A400066DB27 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		282FED7B1B956A400066DB27 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		282FED7C1B956A400066DB27 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		282FED7D1B956A400066DB27 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		282FED7E1B956A400066DB27 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		282FED7F1B956A400066DB27 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		282FED801B956A400066DB27 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		282FED871B956A4B0066DB27 /* ContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		282FED881B956A4B0066DB27 /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		282FED891B956A4B0066DB27 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		282FED8A1B956A4B0066DB27 /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		282FED8F1B95710B0066DB27 /* PHLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHLoadingViewController.h; sourceTree = "<group>"; };
+		282FED901B95710B0066DB27 /* PHLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHLoadingViewController.m; sourceTree = "<group>"; };
+		282FED911B95710B0066DB27 /* PHLoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHLoadingViewController.xib; sourceTree = "<group>"; };
+		282FED921B95710B0066DB27 /* PHBridgePushLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHBridgePushLinkViewController.h; sourceTree = "<group>"; };
+		282FED931B95710B0066DB27 /* PHBridgePushLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHBridgePushLinkViewController.m; sourceTree = "<group>"; };
+		282FED941B95710B0066DB27 /* PHBridgePushLinkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHBridgePushLinkViewController.xib; sourceTree = "<group>"; };
+		282FED951B95710B0066DB27 /* PHBridgeSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHBridgeSelectionViewController.h; sourceTree = "<group>"; };
+		282FED961B95710B0066DB27 /* PHBridgeSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHBridgeSelectionViewController.m; sourceTree = "<group>"; };
+		282FED971B95710B0066DB27 /* PHBridgeSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHBridgeSelectionViewController.xib; sourceTree = "<group>"; };
+		2838A9D31B95D314008CF364 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2838A9D81B9834B8008CF364 /* ViewSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSettings.swift; sourceTree = "<group>"; };
+		28F1FB221B9460D40073117B /* Sleeponomics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sleeponomics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F1FB261B9460D40073117B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28F1FB271B9460D40073117B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28F1FB2C1B9460D40073117B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28F1FB2E1B9460D40073117B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		28F1FB311B9460D40073117B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		28F1FB371B9460D40073117B /* SleeponomicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleeponomicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F1FB3C1B9460D40073117B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28F1FB3D1B9460D40073117B /* SleeponomicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleeponomicsTests.swift; sourceTree = "<group>"; };
+		28F1FB471B946EDC0073117B /* HueSDK_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HueSDK_iOS.framework; sourceTree = "<group>"; };
+		28F1FB4B1B94709F0073117B /* Sleeponomics-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sleeponomics-Bridging-Header.h"; sourceTree = "<group>"; };
+		54A13F871B9775CD0013367B /* SleepTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepTime.swift; sourceTree = "<group>"; };
+		54A3729C1B98CC5100481CB0 /* ColorConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConfiguration.swift; sourceTree = "<group>"; };
+		5D8B35D31B95CF35008CCE9E /* bridge-auth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bridge-auth.png"; sourceTree = "<group>"; };
+		5D8B35D41B95CF35008CCE9E /* bridge-auth@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bridge-auth@2x.png"; sourceTree = "<group>"; };
+		5D8B35D51B95CF35008CCE9E /* bridge-auth@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bridge-auth@3x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28F1FB1F1B9460D40073117B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28F1FB481B946EDC0073117B /* HueSDK_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28F1FB341B9460D40073117B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		282FED6D1B94A5F20066DB27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28F1FB471B946EDC0073117B /* HueSDK_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		282FED761B956A2D0066DB27 /* Lumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				282FED861B956A4B0066DB27 /* Extensions */,
+				282FED771B956A400066DB27 /* DDAbstractDatabaseLogger.h */,
+				282FED781B956A400066DB27 /* DDAbstractDatabaseLogger.m */,
+				282FED791B956A400066DB27 /* DDASLLogger.h */,
+				282FED7A1B956A400066DB27 /* DDASLLogger.m */,
+				282FED7B1B956A400066DB27 /* DDFileLogger.h */,
+				282FED7C1B956A400066DB27 /* DDFileLogger.m */,
+				282FED7D1B956A400066DB27 /* DDLog.h */,
+				282FED7E1B956A400066DB27 /* DDLog.m */,
+				282FED7F1B956A400066DB27 /* DDTTYLogger.h */,
+				282FED801B956A400066DB27 /* DDTTYLogger.m */,
+			);
+			path = Lumberjack;
+			sourceTree = "<group>";
+		};
+		282FED861B956A4B0066DB27 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				282FED871B956A4B0066DB27 /* ContextFilterLogFormatter.h */,
+				282FED881B956A4B0066DB27 /* ContextFilterLogFormatter.m */,
+				282FED891B956A4B0066DB27 /* DispatchQueueLogFormatter.h */,
+				282FED8A1B956A4B0066DB27 /* DispatchQueueLogFormatter.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		282FED8D1B9570FE0066DB27 /* SDKWizard */ = {
+			isa = PBXGroup;
+			children = (
+				5D8B35CC1B95CEBC008CCE9E /* Resources */,
+				282FED8E1B95710B0066DB27 /* LoadingView */,
+				282FED921B95710B0066DB27 /* PHBridgePushLinkViewController.h */,
+				282FED931B95710B0066DB27 /* PHBridgePushLinkViewController.m */,
+				282FED941B95710B0066DB27 /* PHBridgePushLinkViewController.xib */,
+				282FED951B95710B0066DB27 /* PHBridgeSelectionViewController.h */,
+				282FED961B95710B0066DB27 /* PHBridgeSelectionViewController.m */,
+				282FED971B95710B0066DB27 /* PHBridgeSelectionViewController.xib */,
+			);
+			path = SDKWizard;
+			sourceTree = "<group>";
+		};
+		282FED8E1B95710B0066DB27 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				282FED8F1B95710B0066DB27 /* PHLoadingViewController.h */,
+				282FED901B95710B0066DB27 /* PHLoadingViewController.m */,
+				282FED911B95710B0066DB27 /* PHLoadingViewController.xib */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		287A6EBC1BA00668006105F4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2838A9D31B95D314008CF364 /* HomeViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		287A6EBE1BA00698006105F4 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				54A3729C1B98CC5100481CB0 /* ColorConfiguration.swift */,
+				2838A9D81B9834B8008CF364 /* ViewSettings.swift */,
+			);
+			name = Configurations;
+			sourceTree = "<group>";
+		};
+		287A6EBF1BA006AC006105F4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				54A13F871B9775CD0013367B /* SleepTime.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		287A6EC01BA006C0006105F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				28F1FB2B1B9460D40073117B /* Main.storyboard */,
+				28F1FB301B9460D40073117B /* LaunchScreen.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		28F1FB191B9460D40073117B = {
+			isa = PBXGroup;
+			children = (
+				282FED8D1B9570FE0066DB27 /* SDKWizard */,
+				282FED761B956A2D0066DB27 /* Lumberjack */,
+				28F1FB241B9460D40073117B /* Sleeponomics */,
+				28F1FB3A1B9460D40073117B /* SleeponomicsTests */,
+				28F1FB231B9460D40073117B /* Products */,
+				282FED6D1B94A5F20066DB27 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		28F1FB231B9460D40073117B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28F1FB221B9460D40073117B /* Sleeponomics.app */,
+				28F1FB371B9460D40073117B /* SleeponomicsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28F1FB241B9460D40073117B /* Sleeponomics */ = {
+			isa = PBXGroup;
+			children = (
+				287A6EBF1BA006AC006105F4 /* Models */,
+				287A6EBE1BA00698006105F4 /* Configurations */,
+				28F1FB2E1B9460D40073117B /* Images.xcassets */,
+				28F1FB251B9460D40073117B /* Supporting Files */,
+				287A6EC01BA006C0006105F4 /* Views */,
+				287A6EBC1BA00668006105F4 /* ViewControllers */,
+				28F1FB271B9460D40073117B /* AppDelegate.swift */,
+				28F1FB4B1B94709F0073117B /* Sleeponomics-Bridging-Header.h */,
+			);
+			path = Sleeponomics;
+			sourceTree = "<group>";
+		};
+		28F1FB251B9460D40073117B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28F1FB261B9460D40073117B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28F1FB3A1B9460D40073117B /* SleeponomicsTests */ = {
+			isa = PBXGroup;
+			children = (
+				28F1FB3D1B9460D40073117B /* SleeponomicsTests.swift */,
+				28F1FB3B1B9460D40073117B /* Supporting Files */,
+			);
+			path = SleeponomicsTests;
+			sourceTree = "<group>";
+		};
+		28F1FB3B1B9460D40073117B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28F1FB3C1B9460D40073117B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D8B35CC1B95CEBC008CCE9E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5D8B35D31B95CF35008CCE9E /* bridge-auth.png */,
+				5D8B35D41B95CF35008CCE9E /* bridge-auth@2x.png */,
+				5D8B35D51B95CF35008CCE9E /* bridge-auth@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28F1FB211B9460D40073117B /* Sleeponomics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28F1FB411B9460D40073117B /* Build configuration list for PBXNativeTarget "Sleeponomics" */;
+			buildPhases = (
+				28F1FB1E1B9460D40073117B /* Sources */,
+				28F1FB1F1B9460D40073117B /* Frameworks */,
+				28F1FB201B9460D40073117B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sleeponomics;
+			productName = Sleeponomics;
+			productReference = 28F1FB221B9460D40073117B /* Sleeponomics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28F1FB361B9460D40073117B /* SleeponomicsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28F1FB441B9460D40073117B /* Build configuration list for PBXNativeTarget "SleeponomicsTests" */;
+			buildPhases = (
+				28F1FB331B9460D40073117B /* Sources */,
+				28F1FB341B9460D40073117B /* Frameworks */,
+				28F1FB351B9460D40073117B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28F1FB391B9460D40073117B /* PBXTargetDependency */,
+			);
+			name = SleeponomicsTests;
+			productName = SleeponomicsTests;
+			productReference = 28F1FB371B9460D40073117B /* SleeponomicsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28F1FB1A1B9460D40073117B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Prototyp;
+				TargetAttributes = {
+					28F1FB211B9460D40073117B = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = VZTTYX2VUC;
+					};
+					28F1FB361B9460D40073117B = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 28F1FB211B9460D40073117B;
+					};
+				};
+			};
+			buildConfigurationList = 28F1FB1D1B9460D40073117B /* Build configuration list for PBXProject "Sleeponomics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28F1FB191B9460D40073117B;
+			productRefGroup = 28F1FB231B9460D40073117B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28F1FB211B9460D40073117B /* Sleeponomics */,
+				28F1FB361B9460D40073117B /* SleeponomicsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28F1FB201B9460D40073117B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D8B35D81B95CF35008CCE9E /* bridge-auth@3x.png in Resources */,
+				5D8B35D71B95CF35008CCE9E /* bridge-auth@2x.png in Resources */,
+				282FEDA21B95710B0066DB27 /* PHBridgeSelectionViewController.xib in Resources */,
+				28F1FB2D1B9460D40073117B /* Main.storyboard in Resources */,
+				282FEDA01B95710B0066DB27 /* PHBridgePushLinkViewController.xib in Resources */,
+				282FED9E1B95710B0066DB27 /* PHLoadingViewController.xib in Resources */,
+				5D8B35D61B95CF35008CCE9E /* bridge-auth.png in Resources */,
+				28F1FB321B9460D40073117B /* LaunchScreen.xib in Resources */,
+				28F1FB2F1B9460D40073117B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28F1FB351B9460D40073117B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28F1FB1E1B9460D40073117B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282FED841B956A400066DB27 /* DDLog.m in Sources */,
+				282FED821B956A400066DB27 /* DDASLLogger.m in Sources */,
+				28F1FB281B9460D40073117B /* AppDelegate.swift in Sources */,
+				282FED8C1B956A4B0066DB27 /* DispatchQueueLogFormatter.m in Sources */,
+				282FED9D1B95710B0066DB27 /* PHLoadingViewController.m in Sources */,
+				282FEDA11B95710B0066DB27 /* PHBridgeSelectionViewController.m in Sources */,
+				282FED811B956A400066DB27 /* DDAbstractDatabaseLogger.m in Sources */,
+				282FED851B956A400066DB27 /* DDTTYLogger.m in Sources */,
+				54A3729D1B98CC5100481CB0 /* ColorConfiguration.swift in Sources */,
+				54A13F881B9775CD0013367B /* SleepTime.swift in Sources */,
+				282FED9F1B95710B0066DB27 /* PHBridgePushLinkViewController.m in Sources */,
+				282FED831B956A400066DB27 /* DDFileLogger.m in Sources */,
+				2838A9D91B9834B8008CF364 /* ViewSettings.swift in Sources */,
+				2838A9D41B95D314008CF364 /* HomeViewController.swift in Sources */,
+				282FED8B1B956A4B0066DB27 /* ContextFilterLogFormatter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28F1FB331B9460D40073117B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28F1FB3E1B9460D40073117B /* SleeponomicsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28F1FB391B9460D40073117B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28F1FB211B9460D40073117B /* Sleeponomics */;
+			targetProxy = 28F1FB381B9460D40073117B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28F1FB2B1B9460D40073117B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28F1FB2C1B9460D40073117B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28F1FB301B9460D40073117B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28F1FB311B9460D40073117B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28F1FB3F1B9460D40073117B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRELINK_FLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28F1FB401B9460D40073117B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRELINK_FLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28F1FB421B9460D40073117B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Sleeponomics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sleeponomics/Sleeponomics-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		28F1FB431B9460D40073117B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Sleeponomics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sleeponomics/Sleeponomics-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		28F1FB451B9460D40073117B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SleeponomicsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sleeponomics.app/Sleeponomics";
+			};
+			name = Debug;
+		};
+		28F1FB461B9460D40073117B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SleeponomicsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sleeponomics.app/Sleeponomics";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28F1FB1D1B9460D40073117B /* Build configuration list for PBXProject "Sleeponomics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28F1FB3F1B9460D40073117B /* Debug */,
+				28F1FB401B9460D40073117B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28F1FB411B9460D40073117B /* Build configuration list for PBXNativeTarget "Sleeponomics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28F1FB421B9460D40073117B /* Debug */,
+				28F1FB431B9460D40073117B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28F1FB441B9460D40073117B /* Build configuration list for PBXNativeTarget "SleeponomicsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28F1FB451B9460D40073117B /* Debug */,
+				28F1FB461B9460D40073117B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28F1FB1A1B9460D40073117B /* Project object */;
+}
